@@ -10,8 +10,6 @@ export const Modal = ({ numOfRolls, newGame }) => {
   )
 
   useEffect(() => {
-    console.log('Set Highest')
-
     if (
       numOfRolls !== 0 &&
       (numOfRolls < lowestNumRolls || lowestNumRolls === 0)
@@ -25,8 +23,6 @@ export const Modal = ({ numOfRolls, newGame }) => {
       setHighestNumRolls(numOfRolls)
     }
   }, [numOfRolls])
-
-  console.log('Rendering STATS')
 
   return (
     <>
