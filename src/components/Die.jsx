@@ -1,12 +1,11 @@
-import { memo } from "react";
+import { memo } from 'react'
 
 const Die = ({ value, isHeld, holdDice }) => (
   <button
-    className={isHeld ? "die-face die-face__green" : "die-face rolling"}
-    onClick={holdDice}
-  >
+    className={isHeld ? 'die-face die-face__green' : 'die-face rolling'}
+    onClick={holdDice}>
     {value}
   </button>
-);
+)
 
-export default memo(Die);
+export default memo(Die)
